@@ -1,0 +1,39 @@
+@use "../../styles/variables" as *;
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200px;
+  padding-block: 16px;
+  padding-inline: 60px;
+  background: $button;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: $white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: $button-hover;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &--outline {
+    border: 1px solid $gray-light;
+    background: transparent;
+    padding-inline: 32px;
+    color: $main;
+    transition: border-color 0.3s ease;
+
+    &:hover {
+      border-color: $button-hover;
+    }
+  }
+}

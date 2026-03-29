@@ -1,0 +1,39 @@
+@use "../styles/variables" as *;
+
+.hero {
+  position: relative;
+  height: calc(100vh - $header-height);
+  display: flex;
+  align-items: center;
+
+  img {
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  &__content {
+    margin: 0 64px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 67%;
+    color: $inputs;
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    color: $inputs;
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    width: 176px;
+    height: 56px;
+    white-space: nowrap;
+  }
+}

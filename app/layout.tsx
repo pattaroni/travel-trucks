@@ -23,10 +23,8 @@ export default function RootLayout({
     <TanStackProvider>
       <html lang="en" className={inter.variable}>
         <body>
-          <div className="container">
-            <Header />
-            {children}
-          </div>
+          <Header />
+          <main>{children}</main>
         </body>
       </html>
     </TanStackProvider>
