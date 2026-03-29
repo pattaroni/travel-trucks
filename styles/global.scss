@@ -1,0 +1,13 @@
+@use "./reset";
+@use "./variables" as *;
+
+body {
+  font-family: $font-base;
+}
+
+.container {
+  padding: 0 64px;
+  width: 1440px;
+  margin: 0 auto;
+  color: $main;
+}

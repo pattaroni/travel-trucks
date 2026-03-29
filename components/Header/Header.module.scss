@@ -1,0 +1,25 @@
+@use "../../styles/variables" as *;
+
+.header {
+  display: flex;
+  border-bottom: 1px solid $badges;
+  padding-block: 24px;
+  padding-inline: 64px;
+  width: 100%;
+  height: 72px;
+  background: $inputs;
+  position: relative;
+
+  &__logo {
+    position: absolute;
+  }
+
+  &__nav {
+    margin: 0 auto;
+  }
+
+  &__navList {
+    display: flex;
+    gap: 32px;
+  }
+}
